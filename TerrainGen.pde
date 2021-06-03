@@ -14,10 +14,10 @@ void setup() {
   for (int y = 0; y < rows; y++) {
     float xoff = 0;
     for (int x = 0; x < cols; x++) {
-      terrain[x][y] = map(noise(xoff, yoff), 0, 1, -50, 50);
-      xoff += 0.01;
+      terrain[x][y] = map(noise(xoff, yoff), 0, 1, -100, 100);
+      xoff += 0.2;
     }
-    yoff += 0.01;
+    yoff += 0.2;
 }
 }
   
