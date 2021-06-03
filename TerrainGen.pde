@@ -14,6 +14,9 @@ void draw() {
   stroke(255);
   noFill();
   
+  translate(width / 2, height / 2);
+  rotateX(PI / 3);
+  
   for (int y = 0; y < rows; y++) {
     beginShape(TRIANGLE_STRIP);
     for (int x = 0; x < cols; x++) {
@@ -22,5 +25,5 @@ void draw() {
       //rect(x * scl, y * scl, scl, scl);
     }
     endShape();
-}
-}
+ }
+ }
